@@ -1,0 +1,54 @@
+body {
+    background-image: linear-gradient(to right, 
+    #eb08be , #efd408);
+}
+.pesquisar {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform:  translate(-50%,50%);
+    background: #2d342d;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+.pesquisar:hover > .campo-pesquisar {
+    width: 240px;
+    padding: 0 6px;
+}
+.pesquisar:hover > .botao-pesquisar {
+  background: white;
+  color : #2f3640;
+}
+.botao-pesquisar {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.campo-pesquisar {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+@media screen and (max-width: 620px) {
+.pesquisar:hover > .campo-pesquisar {
+    width: 150px;
+    padding: 0 6px;
+}
+}
